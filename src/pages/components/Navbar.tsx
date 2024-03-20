@@ -16,7 +16,7 @@ const Navbar = () => {
              
             </Link>
           
-          <div className="text-3xl md:hidden" onClick={() => setOpen(!open)}>
+          <div className="text-3xl md:hidden cursor-pointer" onClick={() => setOpen(!open)}>
             {open ? <FaTimes /> : <FaBars />}
           </div>
         </div>
@@ -24,7 +24,7 @@ const Navbar = () => {
         {/* Mobile nav */}
         <ul
           className={`
-        md:hidden bg-[#f1f1f1] dark:bg-[#1f2937] fixed z-10 w-full top-0 overflow-y-auto bottom-0 py-24 pl-4
+        md:hidden bg-[#f1f1f1] dark:bg-[#1f2937] fixed z-10 w-full top-0 overflow-y-auto bottom-0 flex flex-col justify-center items-center
         duration-500 ${open ? "left-0" : "left-[-100%]"}
         `}
         onClick={() => setOpen(!open)}
@@ -35,22 +35,22 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/about" className="py-1 px-3 inline-block">
+            <Link to="/about" className="py-1 px-3 inline-block text-xl">
               About
             </Link>
           </li>
           <li>
-            <Link to="/projects" className="py-1 px-3 inline-block">
+            <Link to="/projects" className="py-1 px-3 inline-block text-xl">
                Portfolio
             </Link>
           </li>
           <li>
-            <Link to="/contacts" className="py-1 px-3 inline-block">
+            <Link to="/contacts" className="py-1 px-3 inline-block text-xl">
                Contacts
             </Link>
           </li>
           <li>
-            <Link to="/blogs" className="py-1 px-3 inline-block">
+            <Link to="/blogs" className="py-1 px-3 inline-block text-xl">
                Blogs
             </Link>
           </li>

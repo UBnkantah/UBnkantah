@@ -64,7 +64,7 @@ const AboutPg = () => {
         <div>
           <p className="md:text-3xl text-xl font-[500]">PERSONAL INFOS</p>
           <div className="py-4">
-            <div className="flex pt-1 justify-between items-start">
+            <div className="grid grid-cols-2 pt-1 justify-start items-start">
               <div>
                 <p>First Name: <span className="font-bold">Ubong</span> </p>
               </div>
@@ -72,20 +72,20 @@ const AboutPg = () => {
                 <p>Location:  <span className="font-bold">Remote</span></p>
               </div>
             </div>
-            <div className="flex pt-1 justify-between items-start">
+            <div className="grid grid-cols-2 pt-1 justify-start items-start">
               <div>
                 <p>Last Name:  <span className="font-bold">Nkantah</span> </p>
               </div>
               <div>
-                <p>Phone Number: <span className="font-bold">+233 234 567 890</span></p>
+                <p>Phone Number: <br /> <span className="font-bold">+233 234 567 890</span></p>
               </div>
             </div>
-            <div className="flex pt-1 justify-between items-center">
+            <div className="grid grid-cols-2 pt-1 justify-start items-start">
               <div>
                 <p>Nationality: <span className="font-bold">Nigerian</span> </p>
               </div>
               <div>
-                <p>Email Address: <span className="font-bold text-sm">ubongnkantahuwem@gmail.com</span></p>
+                <p>Email Address: <span className="font-bold md:text-sm text-xs">ubongnkantahuwem@gmail.com</span></p>
               </div>
             </div>
           </div>

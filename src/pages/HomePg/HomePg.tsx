@@ -20,14 +20,11 @@ const HomePg = () => {
   return (
       <div className="container md:pt-12 pt-4" >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center items-center pt-4">
-              <div className="shadow-lg rounded-full md:rounded-xl flex justify-center items-center"
-              >
                 <img
                   src={Ubj}
                   alt=""
                   className="w-100 rounded-full md:rounded-xl"
                 />
-              </div>
               <div className="col-span-2 flex flex-col gap-3">
                 <h2 className="text-primary md:text-5xl text-3xl text-center md:text-start font-['Josefin_Sans']"> - I'm Ubong Nkantah.</h2>
                 <p className="md:text-3xl text-xl font-[400] text-center md:text-start">{TypeFunc()}</p>
