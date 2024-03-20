@@ -1,7 +1,8 @@
 
-import { FaDownload } from "react-icons/fa6"
-import { Skillitems } from "../../utils/data"
+import { FaCode, FaDownload, FaHandshake, FaPeopleGroup } from "react-icons/fa6"
+// import { Skillitems } from "../../utils/data"
 import { ExpAbtme } from "../../ui"
+import { HiOutlineSpeakerphone } from "react-icons/hi"
 
 
 
@@ -9,29 +10,53 @@ const AboutPg = () => {
   const ExpItem = [
     {
       id: 1,
-      name: "12+",
+      name: "5+",
       yrs: "YEARS OF",
       exp: "EXPERIENCES"
     },
-    {
-      id: 2,
-      name: "12+",
-      yrs: "YEARS OF",
-      exp: "EXPERIENCES"
-    },
+    // {
+    //   id: 2,
+    //   name: "12+",
+    //   yrs: "YEARS OF",
+    //   exp: "EXPERIENCES"
+    // },
     {
       id: 3,
-      name: "81+",
+      name: "10+",
       yrs: "HAPPY",
       exp: "CUSTOMERS"
     },
     {
       id: 4,
-      name: "53+",
+      name: "5",
       yrs: "AWARDS",
       exp: "WON"
     }
   ]
+
+  const Serve =[
+    {
+      id: 1,
+      name: "Web Development",
+      icon: <FaCode />
+    },
+    {
+      id: 2,
+      name: "IT Consultant",
+      icon: <FaHandshake />
+    },
+    {
+      id: 3,
+      name: "Public Speaking",
+      icon: <HiOutlineSpeakerphone />
+    },
+    {
+      id: 4,
+      name: "Community Management",
+      icon: <FaPeopleGroup />
+    }
+  ]
+
   return (
     <div className="container pt-12">
       <p className="text-center text-5xl">ABOUT <span className="text-primary">ME</span> </p>
@@ -60,11 +85,11 @@ const AboutPg = () => {
                 <p>Nationality: <span className="font-bold">Nigerian</span> </p>
               </div>
               <div>
-                <p>Email Address: <span className="font-bold">mail@gmail.com</span></p>
+                <p>Email Address: <span className="font-bold text-sm">ubongnkantahuwem@gmail.com</span></p>
               </div>
             </div>
           </div>
-          <div>
+          <div className="flex justify-center md:justify-start items-center">
             <button className="rounded-full relative py-2 ps-4 pe-12 flex flex-row justify-center items-center gap-2 border-2 border-primary">DOWNLOAD CV <span className="bg-primary rounded-full p-3 absolute right-0"><FaDownload size={20} /></span></button>
           </div>
         </div>
@@ -77,8 +102,21 @@ const AboutPg = () => {
           </div>
         </div>
       </div>
-      {/* SKILLS */}
+      {/* MY SERVICES */}
       <div>
+        <h2 className="text-center text-3xl">MY <span className="text-primary">SERVICES</span> </h2>
+      <div className="grid grid-cols-2 md:grid-cols-4 py-4 justify-center item-center gap-4">
+        {Serve.map((item) => (
+          <div key={item.id} className="rounded-xl py-4 bg-[#f1f1f1] dark:bg-[#1f2937] shadow-lg flex flex-col text-center justify-center items-center">
+            <div>{item.icon}</div>
+            <div>{item.name}</div>
+          </div>
+        ))}
+      </div>
+      </div>
+      
+      {/* SKILLS */}
+      {/* <div>
     <h2 className="text-center text-3xl">MY <span className="text-primary">SKILLS</span> </h2>
     <div className="grid pb-4 pt-8  grid-cols-3 md:grid-cols-6 lg:grid-cols-8 justify-center items-center gap-4">
       {Skillitems.map((item) => (
@@ -91,9 +129,9 @@ const AboutPg = () => {
       ))}
       
     </div>
-    </div>
+    </div> */}
       {/* TOOLS */}
-    <div>
+    {/* <div>
     <h2 className="text-center text-3xl">MY <span className="text-primary">TOOLS</span> </h2>
     <div className="grid pb-4 pt-8  grid-cols-3 md:grid-cols-6 lg:grid-cols-8 justify-center items-center gap-4">
       {Skillitems.map((item) => (
@@ -106,7 +144,7 @@ const AboutPg = () => {
       ))}
       
     </div>
-    </div>
+    </div> */}
     </div>
   )
 }

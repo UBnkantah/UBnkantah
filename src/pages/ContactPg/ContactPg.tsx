@@ -19,8 +19,7 @@ const ContactPg = () => {
     e.preventDefault()
     try {
       setLoading(true)
-       axios.post("")
-      toast.success("", {position: "bottom-left"})
+       axios.post("https://script.google.com/macros/s/AKfycbyQZ0gBFQ5M62dzfiK28EEsV2V9QLZXNveFBnf_oAddeY8GtoTkDSdnJVggZk6P9ea-0g/exec", {name, email, subject, message}).then(() => toast.success("Message Received", {position: "bottom-left"})).catch((error) => toast.error(error, {position: "bottom-left"}));
       setLoading(false)
     } catch (error: any) {
       toast.error(error, {position: "bottom-left"})
@@ -64,7 +63,7 @@ const ContactPg = () => {
         <input placeholder='Your subject' value={subject} onChange={(e) => setSubject(e.target.value)} className='p-2 bg-[#f1f1f1] dark:bg-[#1f2937] rounded-xl' type='text' required   />
       </div>
       <div>
-        <textarea value={message} onChange={(e) => setMessage(e.target.value)} className='w-full h-[200px] rounded-xl mt-2 mb-4 border-black bg-[#f1f1f1] dark:bg-[#1f2937]'></textarea>
+        <textarea value={message} onChange={(e) => setMessage(e.target.value)} className='w-full h-[200px] rounded-xl mt-2 mb-4 border-black bg-[#f1f1f1] dark:bg-[#1f2937] p-2'></textarea>
       </div>
       <button className='bg-primary py-2 px-4 rounded-lg text-white'>{loading? (<>Sending..</>): (<>SEND MESSAGE</>)}</button>
         </form>

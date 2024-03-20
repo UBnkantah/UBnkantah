@@ -7,11 +7,28 @@ import 'aos/dist/aos.css';
 import "react-toastify/dist/ReactToastify.css";
 import AOS from "aos";
 import { useEffect } from "react";
+import {FaMoon, FaSun} from "react-icons/fa"
+import { useTheme } from "next-themes";
+
 function App() {
   const router = createBrowserRouter([{
     path: "*",
     Component: Root
   }])
+
+  
+   const { systemTheme, theme, setTheme } = useTheme();
+
+  const themeBox = () => {
+    const currentTheme = theme === "system" ? systemTheme : theme;
+
+    if (currentTheme === "dark") {
+      return <FaSun color="black" size={18}/>;
+    } else {
+      return <FaMoon color="white" size={18}/>;
+    }
+  };
+
 
   useEffect(() =>{
     AOS.init({
@@ -27,11 +44,11 @@ function App() {
       <div>
         <Navbar />
         <Sidebar />
-        {/* <div onClick={() => setTheme(theme === "light" ? "dark" : "light")} className="fixed top-1/2 md:right-12 right-6 cursor-pointer border border-primary rounded-full p-2 z-50 dark:bg-[#f1f1f1] bg-[#1f2937] shadow-2xl">
+        <div onClick={() => setTheme(theme === "light" ? "dark" : "light")} className="block md:hidden fixed top-1/2 md:right-12 right-6 cursor-pointer border border-primary rounded-full p-2 z-50 dark:bg-[#f1f1f1] bg-[#1f2937] shadow-2xl">
              
               {themeBox()}
               
-            </div> */}
+            </div>
             <div className="pe-10">
              <Routes>
           <Route path="/" element={<HomePg />} />
