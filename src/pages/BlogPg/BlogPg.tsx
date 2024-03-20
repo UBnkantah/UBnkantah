@@ -32,8 +32,8 @@ const BlogPg = () => {
   return (
     <>
     <div className="container md:pt-12 pt-4">
-      <h2 className="text-center text-5xl">BLOGS</h2>
-      <p className="text-center text-2xl">MY RECENT <span className="text-primary">ARTICLES</span> </p>
+      <h2 className="text-center font-['Josefin_Sans'] md:text-5xl text-3xl">BLOGS</h2>
+      <p className="text-center md:text-3xl text-xl ">MY RECENT <span className="text-primary">ARTICLES</span> </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-4 justify-center items-center">
         {BlogItems.map((item) => (
          <BlogCard key={item.id} img={item.img} link={item.link} title={item.title} text={item.text}/> 
@@ -41,7 +41,7 @@ const BlogPg = () => {
       </div>
       <div className="flex justify-center items-center">
         <Link to="https://medium.com/@ubongnkantahuwem">
-          <button className="rounded-xl p-2 border border-black ">SEE MORE</button>
+          <button className="rounded-xl p-2 border-2 border-primary ">SEE MORE</button>
         </Link>
         
       </div>

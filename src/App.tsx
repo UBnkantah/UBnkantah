@@ -57,7 +57,7 @@ function App() {
           <Route path="/contacts" element={<ContactPg />} />
           <Route path="/blogs" element={<BlogPg />} />
         </Routes> 
-        <div className="py-2">
+        <div className="py-1">
           <p className="text-center">@2024 Ubong Nkantah. All Right Reserved</p>
         </div>
             </div>

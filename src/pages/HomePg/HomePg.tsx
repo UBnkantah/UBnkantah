@@ -19,7 +19,7 @@ const HomePg = () => {
 
   return (
       <div className="container md:pt-12 pt-4" >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center items-center pt-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center items-center pt-4">
               <div className="shadow-lg rounded-full md:rounded-xl flex justify-center items-center"
               >
                 <img
@@ -29,8 +29,8 @@ const HomePg = () => {
                 />
               </div>
               <div className="col-span-2 flex flex-col gap-3">
-                <h2 className="text-primary text-5xl text-center md:text-start"> - I'm Ubong Nkantah.</h2>
-                <p className="text-3xl font-[400] text-center md:text-start">{TypeFunc()}</p>
+                <h2 className="text-primary md:text-5xl text-3xl text-center md:text-start font-['Josefin_Sans']"> - I'm Ubong Nkantah.</h2>
+                <p className="md:text-3xl text-xl font-[400] text-center md:text-start">{TypeFunc()}</p>
                 <p className="text-center md:text-start">
                   
 As a dedicated Software Developer, I am fervent about coding, web development, and embracing new technologies. I thrive in collaborative environments, offering innovative ideas for organizational advancement. Additionally, I craft diverse educational content spanning videos, blogs, and graphics to enrich software engineering enthusiasts

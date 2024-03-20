@@ -38,31 +38,31 @@ const AboutPg = () => {
     {
       id: 1,
       name: "Web Development",
-      icon: <FaCode />
+      icon: <FaCode size={23} />
     },
     {
       id: 2,
       name: "IT Consultant",
-      icon: <FaHandshake />
+      icon: <FaHandshake size={23}/>
     },
     {
       id: 3,
       name: "Public Speaking",
-      icon: <HiOutlineSpeakerphone />
+      icon: <HiOutlineSpeakerphone size={23}/>
     },
     {
       id: 4,
       name: "Community Management",
-      icon: <FaPeopleGroup />
+      icon: <FaPeopleGroup size={23}/>
     }
   ]
 
   return (
     <div className="container pt-12">
-      <p className="text-center text-5xl">ABOUT <span className="text-primary">ME</span> </p>
+      <p className="text-center font-['Josefin_Sans'] md:text-5xl text-3xl">ABOUT <span className="text-primary">ME</span> </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center py-8">
         <div>
-          <p className="text-3xl font-[500]">PERSONAL INFOS</p>
+          <p className="md:text-3xl text-xl font-[500]">PERSONAL INFOS</p>
           <div className="py-4">
             <div className="flex pt-1 justify-between items-start">
               <div>
@@ -104,7 +104,7 @@ const AboutPg = () => {
       </div>
       {/* MY SERVICES */}
       <div>
-        <h2 className="text-center text-3xl">MY <span className="text-primary">SERVICES</span> </h2>
+        <h2 className="text-center md:text-3xl text-xl">MY <span className="text-primary">SERVICES</span> </h2>
       <div className="grid grid-cols-2 md:grid-cols-4 py-4 justify-center item-center gap-4">
         {Serve.map((item) => (
           <div key={item.id} className="rounded-xl py-4 bg-[#f1f1f1] dark:bg-[#1f2937] shadow-lg flex flex-col text-center justify-center items-center">
