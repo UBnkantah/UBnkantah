@@ -1,6 +1,6 @@
 
 import { FaCode, FaDownload, FaHandshake, FaPeopleGroup } from "react-icons/fa6"
-// import { Skillitems } from "../../utils/data"
+import { Skillitems } from "../../utils/data";
 import { ExpAbtme } from "../../ui"
 import { HiOutlineSpeakerphone } from "react-icons/hi"
 
@@ -116,20 +116,20 @@ const AboutPg = () => {
       </div>
       
       {/* SKILLS */}
-      {/* <div>
+      <div>
     <h2 className="text-center text-3xl">MY <span className="text-primary">SKILLS</span> </h2>
     <div className="grid pb-4 pt-8  grid-cols-3 md:grid-cols-6 lg:grid-cols-8 justify-center items-center gap-4">
       {Skillitems.map((item) => (
-      <div key={item.id} className="bg-[#f1f1f1] dark:bg-[#1f2937] border-2 rounded-xl border-primary justify-center items-center flex flex-col">
+      <div key={item.id} className="bg-[#f1f1f1] dark:bg-[#1f2937] border-2 rounded-xl border-primary justify-center items-center flex flex-col shadow-xl">
         <p>{item.name}</p>
-        <div className="rounded-full p-2 flex items-center justify-center bg-white">
+        {/* <div className="rounded-full p-2 flex items-center justify-center bg-white">
           <img src={item.icon} alt="" className="rounded-full w-16 h-16"/>
-        </div>
+        </div> */}
       </div>  
       ))}
       
     </div>
-    </div> */}
+    </div>
       {/* TOOLS */}
     {/* <div>
     <h2 className="text-center text-3xl">MY <span className="text-primary">TOOLS</span> </h2>

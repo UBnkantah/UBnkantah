@@ -64,20 +64,20 @@ export const PortfolioData = [
 export const Skillitems = [
     {   
         id: 1,
-        name: "React.js",
+        name: "HTML",
         icon: Gymateimg
     },
     {
         id: 2,
-        name: "Redux"
+        name: "CSS"
     },
     {
         id: 3,
-        name: "Redux"
+        name: "Javascript"
     },
     {
         id: 4,
-        name: "Redux"
+        name: "React.js"
     },
     {
         id: 5,
@@ -85,62 +85,30 @@ export const Skillitems = [
     },
     {
         id: 6,
-        name: "Redux"
+        name: "Node.js"
     },
     {
         id: 7,
-        name: "Redux"
+        name: "GIT"
     },
     {
         id: 8,
-        name: "Redux"
+        name: "Firebase"
     },
     {
         id: 9,
-        name: "Redux"
+        name: "Supabase"
     },
     {
         id: 10,
-        name: "Redux"
+        name: "MongoDB"
     },
     {
         id: 11,
-        name: "Redux"
+        name: "Express.js"
     },
     {
         id: 12,
-        name: "Redux"
-    },
-    {
-        id: 13,
-        name: "Redux"
-    },
-    {
-        id: 14,
-        name: "Redux"
-    },
-    {
-        id: 15,
-        name: "Redux"
-    },
-    {
-        id: 16,
-        name: "Redux"
-    },
-    {
-        id: 17,
-        name: "Redux"
-    },
-    {
-        id: 18,
-        name: "Redux"
-    },
-    {
-        id: 19,
-        name: "Redux"
-    },
-    {
-        id: 20,
-        name: "Redux"
-    },
+        name: "Solidity"
+    }
 ]
