@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { FaArrowRightLong } from "react-icons/fa6"
-import Ubj from "../../assets/ubj.jpg";
+import Ubj from "../../assets/homeimg.svg";
 import Typewriter from "typewriter-effect";
 
 
