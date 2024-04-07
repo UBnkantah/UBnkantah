@@ -5,3 +5,4 @@ export {default as accabsimg} from "./accabs.webp";
 export {default as cexdeximg} from "./dexcex.webp";
 export {default as gamefinance} from "./gamefinance.webp";
 export {default as smartey} from "./smartey.png";
+export {default as ubongimg} from "./ubong.jpg";

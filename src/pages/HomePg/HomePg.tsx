@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { FaArrowRightLong } from "react-icons/fa6"
-import Ubj from "../../assets/homeimg.svg";
+import Ubj from "../../assets/ubong.jpg";
 import Typewriter from "typewriter-effect";
 
 
@@ -23,7 +23,7 @@ const HomePg = () => {
                 <img
                   src={Ubj}
                   alt=""
-                  className="w-100 rounded-full md:rounded-xl"
+                  className="w-full rounded-full md:rounded-xl"
                 />
               <div className="col-span-2 flex flex-col gap-3">
                 <h2 className="text-primary md:text-5xl text-3xl text-center md:text-start font-['Josefin_Sans']"> - I'm Ubong Nkantah.</h2>
