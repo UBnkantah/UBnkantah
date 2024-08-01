@@ -10,7 +10,7 @@ const ProjectPg = () => {
       <h2  className="text-center font-['Josefin_Sans'] md:text-5xl text-3xl">MY RECENT <span className='text-primary'>PROJECT</span></h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-4 justify-center items-center">
       {PortfolioData.map((item : any) => (
-        <ProjectCard key={item.id} img={item.img_cover} title={item.title} gitUrl={item.git} liveUrl={item.Link}/>
+        <ProjectCard key={item.id} img={item.img_cover} title={item.title} gitUrl={item.git} liveUrl={item.link}/>
       ))}
       </div>
     </div>
